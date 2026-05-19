@@ -1,3 +1,20 @@
+## al-folio / Jekyll generated files:
+_site
+.bundle
+.DS_Store
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+node_modules/
+vendor/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
