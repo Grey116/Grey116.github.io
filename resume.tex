@@ -1,0 +1,106 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode: : "TeX: UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\geometry{left=0.62in, right=0.62in, top=0.34in, bottom=0.24in}
+\linespread{0.982}
+\titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0cm}{*0.72}{*0.48}
+\titlespacing*{\subsection}{0cm}{*0.64}{*0.22}
+\setlist[itemize]{topsep=0.20em, itemsep=0.03em, parsep=0em, partopsep=0em, leftmargin=1.4pc}
+\renewcommand{\role}[2]{
+  {\par #1 ~ #2 \par}
+  \vspace{0.22ex}
+}
+\urlstyle{same}
+\newcommand{\profilePhoto}{profile.jpg}
+\newcommand{\resumeHeader}{
+  \noindent
+  \begin{minipage}[c]{0.73\textwidth}
+    {\Huge 林佳炜}\par
+    \vspace{0.45ex}
+    {\large 意向岗位: 产品/运营｜立即到岗3-6个月}\par
+    \vspace{0.45ex}
+    {15396578673 \textperiodcentered\ linjiawei\_mail@163.com \textperiodcentered\ 厦门市}\par
+  \end{minipage}
+  \hfill
+  \begin{minipage}[c]{0.19\textwidth}
+    \raggedleft
+    \IfFileExists{\profilePhoto}
+      {\includegraphics[width=2.4cm, height=3.0cm, keepaspectratio]{\profilePhoto}}
+      {\fbox{\parbox[c][3.0cm][c]{2.4cm}{\centering\small 个人照片}}}
+  \end{minipage}
+  \vspace{-0.4ex}
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\resumeHeader
+
+\section{教育背景}
+\datedsubsection{\textbf{厦门大学(985/211/双一流)}, 计算机技术, 硕士}{2024.09 - 2027.06}
+
+
+\datedsubsection{\textbf{福州大学(211/双一流)}, 软件工程, 学士}{2020.09 - 2024.06}
+
+
+\section{项目经历}
+\datedsubsection{\textbf{基于混合推荐算法的数码社区平台}}{2024.02 - 2024.06}
+\role{本科毕业设计 | 独立完成 | 需求分析, 产品设计与系统实现}{}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{目标}: 面向数码产品爱好者获取资讯、交流评测和后台内容管理需求, 规划移动端 App 与 Web 后台 2 端产品, 明确内容浏览、互动、推荐、管理 4 类核心场景
+  \item \textbf{动作}: 独立完成需求梳理、功能拆解、页面流程、后台模块设计与系统实现, 将社区内容分发拆成浏览、推荐点击、互动反馈等可评估链路
+  \item \textbf{结果}: 在 4 个月周期内完成 2 端系统、项目文档和答辩材料交付, 输出需求说明、模块设计、汇报材料等 3 类核心交付物
+\end{itemize}
+
+\datedsubsection{\textbf{MustGo 校园运动社交 App}}{2023.03 - 2023.06}
+\role{本科团队项目 | 产品方案设计, 后端开发与测试}{}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{目标}: 面向校园运动组队场景, 缓解学生运动参与度下降和社交连接减弱问题, 与团队设计 1 套校园运动社交 App 方案
+  \item \textbf{动作}: 梳理“发起/加入运动-定位辅助-消息触达-后台统计”核心路径, 拆解运动社交、定位、语音、消息推送、数据统计 5 类能力, 负责后端接口开发与测试
+  \item \textbf{结果}: 在 3 个月团队项目周期内完成核心功能联调和验收, 明确参与率、组队转化、消息触达、活跃留存等效果评估指标
+\end{itemize}
+
+\datedsubsection{\textbf{低延迟认证加密算法的设计与分析}}{2025.03 - 2025.08}
+\role{研究生项目 | 技术需求拆解, 方案对比与材料整理}{}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{目标}: 面向 IoT 设备和隐私计算等高性能安全通信场景, 梳理低延迟、并行处理、误用安全 3 项关键需求
+  \item \textbf{动作}: 设计 POBC 与 POBC-SIV 2 套候选方案, 对比 AES-CTR-PMAC、AES-GCM、AES-GCM-SIV、Eevee 系列 4 类同类方案
+  \item \textbf{结果}: 在 6 个月周期内完成方案评估和对比文档, 从效率、并行能力、安全特性等维度形成可汇报的技术方案材料
+\end{itemize}
+
+\section{作品集}
+\begin{itemize}[parsep=0em, topsep=0.16em, itemsep=0em]
+  \item \href{https://zippy-seahorse-68793e.netlify.app}{\textbf{视频会议 AI 助手-网页应用原型}}: 模拟 AI 驱动的会前准备、纪要生成与待办跟进全链路效率工具原型\\[-0.05ex]
+  作品链接: \href{https://zippy-seahorse-68793e.netlify.app}{https://zippy-seahorse-68793e.netlify.app}
+  \item \href{https://ai-coding-assistant-analysis.netlify.app}{\textbf{AI 编程助手竞品分析看板}}: 七大主流 AI 编程工具横向对比与选型推荐\\[-0.05ex]
+  作品链接: \href{https://ai-coding-assistant-analysis.netlify.app}{https://ai-coding-assistant-analysis.netlify.app}
+  \item \href{https://prototyping-tools-analysis.netlify.app}{\textbf{原型图工具竞品分析看板}}: 九款主流原型工具深度横评与选型决策指南\\[-0.05ex]
+  作品链接: \href{https://prototyping-tools-analysis.netlify.app}{https://prototyping-tools-analysis.netlify.app}
+\end{itemize}
+
+\section{学生工作}
+\begin{itemize}[parsep=0.2ex]
+  \item 2024.09 - 至今, 厦门大学 2024 级计算机科学与技术系硕士研究生 1 班班长
+  \item 2020.09 - 2022.09, 福州大学 2020 级软件工程 1 班学习委员
+\end{itemize}
+
+\section{荣誉证书与技术能力}
+\begin{itemize}[parsep=0.2ex]
+  \item 连续获得福州大学学期综合奖学金 5 次; 三好学生称号
+  \item 产品工具: 了解产品需求文档、流程图、原型图、效果评估指标等基础产出; 使用 Axure、墨刀、协作文档、Markdown、Obsidian 管理需求记录和项目材料; 熟练使用Codex、Claude等 AI 编程工具辅助提效
+  \item 技术理解: 计算机与软件工程背景, 熟悉 Web/移动端开发流程和 Spring Boot、Vue、UniApp、UniCloud 等技术栈, 会使用 SQL 进行基础数据查询, 能够与研发沟通实现边界
+  \item 材料与语言: 参与 10 余项横纵向项目材料撰写, 曾协助完成省杰青申报与答辩支持; 通过 CET-4, CET-6, 具备英文文献阅读能力
+\end{itemize}
+
+% \section{个人总结}
+% 计算机本硕背景, 具备 Web/移动端项目实践、需求拆解、产品文档和项目材料撰写经验。 能够从用户场景出发梳理功能流程和效果评估指标, 也能理解研发实现边界。 后续希望立足产品经理岗位长期发展, 持续提升用户理解、产品设计和跨团队协作能力。
+
+\end{document}
