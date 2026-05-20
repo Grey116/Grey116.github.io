@@ -1,0 +1,146 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+remote="origin"
+source_branch="main"
+deploy_branch="gh-pages"
+port="8080"
+timeout_seconds="600"
+open_browser="0"
+
+usage() {
+  cat <<'EOF'
+Usage: bin/preview-gh-pages [options]
+
+Preview the GitHub Actions build output from the gh-pages branch.
+This script does not build Jekyll locally.
+
+Options:
+  --port PORT             Preferred local port. Defaults to 8080.
+  --timeout SECONDS       How long to wait for gh-pages to catch up. Defaults to 600.
+  --remote NAME           Git remote to fetch from. Defaults to origin.
+  --source-branch NAME    Source branch that triggers Actions. Defaults to main.
+  --deploy-branch NAME    Branch containing built pages. Defaults to gh-pages.
+  --open                  Open the preview URL in the default browser.
+  -h, --help              Show this help message.
+EOF
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --port)
+      port="${2:?Missing value for --port}"
+      shift 2
+      ;;
+    --timeout)
+      timeout_seconds="${2:?Missing value for --timeout}"
+      shift 2
+      ;;
+    --remote)
+      remote="${2:?Missing value for --remote}"
+      shift 2
+      ;;
+    --source-branch)
+      source_branch="${2:?Missing value for --source-branch}"
+      shift 2
+      ;;
+    --deploy-branch)
+      deploy_branch="${2:?Missing value for --deploy-branch}"
+      shift 2
+      ;;
+    --open)
+      open_browser="1"
+      shift
+      ;;
+    -h | --help)
+      usage
+      exit 0
+      ;;
+    *)
+      echo "Unknown option: $1" >&2
+      usage >&2
+      exit 2
+      ;;
+  esac
+done
+
+if ! command -v git >/dev/null 2>&1; then
+  echo "Error: git is required." >&2
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "Error: python3 is required to serve the static files." >&2
+  exit 1
+fi
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+current_branch="$(git branch --show-current)"
+if [[ "$current_branch" != "$source_branch" ]]; then
+  echo "Error: currently on '$current_branch', but this preview expects '$source_branch'." >&2
+  echo "Switch branches or pass --source-branch $current_branch if that is intentional." >&2
+  exit 1
+fi
+
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo "Warning: working tree has uncommitted changes."
+  echo "         The preview will show the latest pushed GitHub Actions build, not these local changes."
+fi
+
+echo "Fetching $remote/$source_branch and $remote/$deploy_branch..."
+git fetch "$remote" "$source_branch" "$deploy_branch" >/dev/null
+
+local_source_sha="$(git rev-parse "$source_branch")"
+remote_source_sha="$(git rev-parse "$remote/$source_branch")"
+short_source_sha="$(git rev-parse --short=12 "$source_branch")"
+
+if [[ "$local_source_sha" != "$remote_source_sha" ]]; then
+  echo "Error: local $source_branch is not pushed to $remote/$source_branch." >&2
+  echo "Run: git push $remote $source_branch" >&2
+  exit 1
+fi
+
+echo "Waiting for $remote/$deploy_branch to include source commit $short_source_sha..."
+deadline=$((SECONDS + timeout_seconds))
+while true; do
+  git fetch -q "$remote" "$deploy_branch"
+  deploy_message="$(git log -1 --pretty=%B "$remote/$deploy_branch")"
+
+  if [[ "$deploy_message" == *"$local_source_sha"* || "$deploy_message" == *"$short_source_sha"* ]]; then
+    break
+  fi
+
+  if (( SECONDS >= deadline )); then
+    echo "Error: timed out waiting for GitHub Actions to deploy $short_source_sha." >&2
+    echo "Check Actions on GitHub, then rerun this command after the deploy finishes." >&2
+    exit 1
+  fi
+
+  echo "Still waiting for GitHub Actions deploy..."
+  sleep 10
+done
+
+preview_dir="$(mktemp -d "${TMPDIR:-/tmp}/grey116-pages-preview.XXXXXX")"
+git archive --format=tar "$remote/$deploy_branch" | tar -x -C "$preview_dir"
+
+if command -v lsof >/dev/null 2>&1; then
+  while lsof -nP -iTCP:"$port" -sTCP:LISTEN >/dev/null 2>&1; do
+    port=$((port + 1))
+  done
+fi
+
+url="http://127.0.0.1:$port/"
+echo "Previewing built GitHub Pages output from $remote/$deploy_branch"
+echo "Directory: $preview_dir"
+echo "URL: $url"
+echo "Press Ctrl+C to stop the preview server."
+
+if [[ "$open_browser" == "1" ]]; then
+  open "$url" >/dev/null 2>&1 || true
+fi
+
+cd "$preview_dir"
+exec python3 -m http.server "$port" --bind 127.0.0.1

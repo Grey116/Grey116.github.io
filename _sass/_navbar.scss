@@ -69,8 +69,8 @@
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    font-weight: inherit;
+    color: var(--global-text-color);
 
     &:hover {
       color: var(--global-hover-color);
