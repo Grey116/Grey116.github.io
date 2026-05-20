@@ -44,13 +44,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/skills/";
           },
-        },{id: "nav-简历",
-          title: "简历",
-          description: "网页版简历，公开页面不展示手机号。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "projects-ai-编程助手竞品分析看板",
           title: 'AI 编程助手竞品分析看板',
           description: "七大主流 AI 编程工具横向对比与选型推荐。",
