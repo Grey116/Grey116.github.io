@@ -62,18 +62,22 @@
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
 
-    &:hover {
-      color: var(--global-hover-color);
+    &:hover,
+    &:focus {
+      color: var(--global-hover-color) !important;
     }
   }
 
-  .navbar-nav .nav-item.active > .nav-link {
+  .navbar-nav .nav-item.active > .nav-link,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
     background-color: inherit;
     font-weight: inherit;
-    color: var(--global-text-color);
+    color: var(--global-text-color) !important;
 
-    &:hover {
-      color: var(--global-hover-color);
+    &:hover,
+    &:focus {
+      color: var(--global-hover-color) !important;
     }
   }
 

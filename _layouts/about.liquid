@@ -42,26 +42,47 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2 id="news">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="home-section">
+        <h2 id="news">
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% if page.announcements.description %}
+          <div class="home-section-content">
+            {{ page.announcements.description | markdownify }}
+          </div>
+        {% endif %}
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2 id="blog">
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="home-section">
+        <h2 id="blog">
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% if page.latest_posts.description %}
+          <div class="home-section-content">
+            {{ page.latest_posts.description | markdownify }}
+          </div>
+        {% endif %}
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2 id="publications">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="home-section">
+        <h2 id="publications">
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% if page.selected_papers_description %}
+          <div class="home-section-content">
+            {{ page.selected_papers_description | markdownify }}
+          </div>
+        {% endif %}
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
     <!-- Homepage sections -->
