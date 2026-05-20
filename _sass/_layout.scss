@@ -35,16 +35,15 @@ body.sticky-bottom-footer {
 
 .post-header {
   &.about-hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
+    column-gap: 1.35rem;
     margin-bottom: 0.45rem;
   }
 
   .about-heading {
     min-width: 0;
-    flex: 1 1 auto;
   }
 
   .post-title {
@@ -60,17 +59,17 @@ body.sticky-bottom-footer {
 
   .hero-profile {
     float: none !important;
-    width: 30%;
+    width: 100%;
     max-width: 260px;
-    flex: 0 0 30%;
-    margin: 0 0 0.5rem 1rem;
+    margin: 0 0 0.5rem;
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .post-header {
     &.about-hero {
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr;
     }
 
     .headline-intent {
