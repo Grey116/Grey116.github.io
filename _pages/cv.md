@@ -1,12 +1,13 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: 简历
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
+nav_order: 6
+nav_anchor: cv
+cv_pdf: # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: 网页版简历，公开页面不展示手机号。
 toc:
   sidebar: left
 ---

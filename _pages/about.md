@@ -1,125 +1,95 @@
 ---
 layout: about
-title: about
+title: 首页
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 厦门大学计算机技术硕士在读，求职方向为产品/运营。
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: linjiawei_profile.jpg
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>厦门大学计算机技术硕士在读</p>
+    <p>产品 / 运营方向</p>
+    <p>厦门市</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-selected_papers_description: |
-  This section highlights representative work and gives visitors a quick sense of the research thread before they open the full publications page. Use it for papers that best explain your methods, collaborations, and long-term questions.
-
-  A useful homepage publications section does more than list titles. It can briefly connect the selected papers to a larger agenda: what problem motivated the work, what technical approach made it possible, and what kind of follow-up questions it opened. The full bibliography can stay detailed and exhaustive, while this section stays selective and easy to scan.
-
-  When you customize the site, consider choosing three to six papers that tell a coherent story. Add short notes to each publication entry, keep links to preprints or code visible, and make sure the selected set reflects the work you most want a new visitor to remember.
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-  description: |
-    Use the news section for timely updates: accepted papers, talks, releases, collaborations, awards, workshop notes, or short milestones that should be visible without becoming full blog posts.
-
-    The best news items are brief but specific. A visitor should be able to understand what changed, why it matters, and where to go next. If an announcement points to a paper, dataset, demo, or event page, keep the link close to the first sentence so the section works well for quick scanning.
-
-    This area can also act as a lightweight activity log. Even when the rest of the homepage changes slowly, regular news entries make the site feel current and help readers see the rhythm of ongoing work.
-
+  enabled: false
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 6 # leave blank to include all the blog posts
-  description: |
-    The blog section can collect longer explanations, project notes, reading lists, experiments, and reflections that do not fit into a publication or CV entry. It is a good place to show how you think through problems, not only the final results.
-
-    Posts can be technical, personal, or process oriented. For example, you might write about implementation details behind a research prototype, summarize a recent paper cluster, document a teaching example, or explain why a tool choice worked well in practice.
-
-    Keeping several recent posts visible on the homepage gives the page more texture. It lets visitors move from a high-level biography into concrete examples of writing, code, analysis, and taste.
+  enabled: false
 
 home_sections:
+  - id: education
+    title: 教育背景
+    content: |
+      **厦门大学（985/211/双一流）**，计算机技术，硕士
+
+      2024.09 - 2027.06
+
+      **福州大学（211/双一流）**，软件工程，学士
+
+      2020.09 - 2024.06
+
   - id: projects
-    title: projects
+    title: 项目经历
     content: |
-      This section is for work that benefits from a little more context than a single repository link. Use it to describe prototypes, research systems, demos, datasets, visualizations, or long-running side projects.
+      **基于混合推荐算法的数码社区平台**
 
-      A strong project entry usually explains the problem, the audience, and the artifact. For example, one project might focus on an interactive tool for exploring model behavior, while another might present a reproducible pipeline for collecting and analyzing experimental results. A short paragraph can explain what was built, what constraints shaped it, and what someone can learn from opening the demo or source code.
+      本科毕业设计，独立完成需求分析、产品设计与系统实现。围绕数码产品爱好者获取资讯、交流评测和后台内容管理需求，规划移动端 App 与 Web 后台 2 端产品，明确内容浏览、互动、推荐、管理 4 类核心场景。
 
-      You can also use projects to show range. Mix polished work with exploratory sketches, but give each item a clear reason to exist on the homepage.
+      **MustGo 校园运动社交 App**
 
-      Suggested project notes:
+      本科团队项目，参与产品方案设计、后端开发与测试。围绕校园运动组队场景，梳理“发起/加入运动-定位辅助-消息触达-后台统计”核心路径，并明确参与率、组队转化、消息触达、活跃留存等评估指标。
 
-      - What the project does and who it serves.
-      - What technologies, methods, or datasets it uses.
-      - What part of the work is finished, experimental, or under active development.
-      - Where readers can find the live demo, paper, documentation, or repository.
-  - id: repositories
-    title: repositories
+      **低延迟认证加密算法的设计与分析**
+
+      研究生项目，负责技术需求拆解、方案对比与材料整理。面向 IoT 设备和隐私计算等高性能安全通信场景，梳理低延迟、并行处理、误用安全等关键需求。
+
+      [查看项目卡片](/projects/)
+
+  - id: portfolio
+    title: 作品集
     content: |
-      Repositories are most useful on a homepage when they are curated. Instead of listing everything, feature the codebases that are maintained, reproducible, or especially helpful for understanding your work.
+      - [视频会议 AI 助手-网页应用原型](https://zippy-seahorse-68793e.netlify.app)：模拟 AI 驱动的会前准备、纪要生成与待办跟进全链路效率工具原型。
+      - [AI 编程助手竞品分析看板](https://ai-coding-assistant-analysis.netlify.app)：七大主流 AI 编程工具横向对比与选型推荐。
+      - [原型图工具竞品分析看板](https://prototyping-tools-analysis.netlify.app)：九款主流原型工具深度横评与选型决策指南。
 
-      Each repository can include a compact summary, the primary language or framework, installation notes, and the reason someone might want to use it. If a project depends on a paper, tutorial, or dataset, connect those resources here so readers can move between code and explanation without hunting through the site.
+      [查看作品集卡片](/portfolio/)
 
-      This section can also make maintenance status transparent. Mark which repositories are stable, which are research prototypes, and which are archived for reference. Clear status labels help visitors know whether to build on a tool, cite it, or simply inspect it as an example.
+  - id: leadership
+    title: 学生工作
+    content: |
+      **厦门大学 2024 级计算机科学与技术系硕士研究生 1 班班长**
 
-      A good repository preview answers three questions quickly: what problem does the code solve, how hard is it to run, and what would a new contributor or user look at first?
+      2024.09 - 至今
+
+      **福州大学 2020 级软件工程 1 班学习委员**
+
+      2020.09 - 2022.09
+
+  - id: skills
+    title: 荣誉证书与技术能力
+    content: |
+      **荣誉证书**：连续获得福州大学学期综合奖学金 5 次；三好学生；CET-4、CET-6。
+
+      **产品工具**：了解产品需求文档、流程图、原型图、效果评估指标等基础产出；使用 Axure、墨刀、协作文档、Markdown、Obsidian 管理需求记录和项目材料。
+
+      **技术理解**：计算机与软件工程背景，熟悉 Web/移动端开发流程和 Spring Boot、Vue、UniApp、UniCloud 等技术栈，会使用 SQL 进行基础数据查询，能够与研发沟通实现边界。
+
+      **材料与语言**：参与 10 余项横纵向项目材料撰写，曾协助完成省杰青申报与答辩支持，具备英文文献阅读能力。
+
   - id: cv
-    title: CV
+    title: 简历
     content: |
-      The CV section can summarize the parts of your background that visitors most often need: education, appointments, experience, awards, service, invited talks, and selected professional activities.
+      我把简历内容整理成了网页版本，便于快速浏览教育、项目、作品集、学生工作、荣誉证书与技术能力。
 
-      Keep the homepage version concise, then link to the full CV for details. A compact timeline works well here because it lets readers understand the arc of your work before they decide whether to download a longer document. If your site is used for academic applications, collaborations, or recruiting, this section should make your current role and availability especially easy to find.
-
-      You can organize the preview around recent milestones rather than every historical entry. Highlight the positions, recognitions, and responsibilities that best support the story told by the rest of the homepage.
-
-      Possible structure:
-
-      - Current affiliation and research focus.
-      - Education and major training milestones.
-      - Selected awards, fellowships, or grants.
-      - Service, reviewing, mentoring, or community work.
-  - id: teaching
-    title: teaching
-    content: |
-      Teaching content can show how you translate difficult ideas into usable explanations. Include courses, discussion sections, guest lectures, workshops, tutorials, mentoring, reading groups, or open educational materials.
-
-      A useful teaching section names the topic and gives a little evidence of style. For each course or workshop, you might include the audience, level, format, and the main learning goals. If there are slides, notebooks, assignments, or recorded demos, this is a natural place to link them.
-
-      You can also describe mentoring philosophy in a practical way. Visitors may want to know what kinds of projects you supervise, how students usually participate, and what skills they can expect to practice.
-
-      This section should feel concrete: topics taught, materials created, students supported, and ideas that you enjoy making clearer for other people.
-  - id: people
-    title: people
-    content: |
-      The people section can introduce collaborators, students, mentors, labmates, and project partners. For a personal homepage, it is also a good place to make collaboration visible without turning the page into a directory.
-
-      Short descriptions help readers understand how the work is connected. You can group people by project, research area, institution, or role. If someone has a personal site, Google Scholar profile, GitHub account, or lab page, link to it from their name.
-
-      This section can also acknowledge the social shape of the work. Research, teaching, and software rarely happen alone, and a clear people section helps visitors discover the network around the projects and papers they are reading about.
-
-      When customizing, keep entries lightweight: name, affiliation, connection to the work, and one relevant link are usually enough for the homepage.
-  - id: submenus
-    title: submenus
-    content: |
-      This section can hold secondary destinations that are useful but do not need to compete with the main navigation. Examples include books, reading notes, datasets, talks, media, resources, lab guidelines, or a curated list of external links.
-
-      Submenus are helpful when the site grows. They let you keep the top navigation calm while still giving frequent visitors a path into deeper material. If you add several resource pages, group them by intent rather than file type: learning, tools, writing, talks, or references.
-
-      You can also use this space as a staging area. Draft a short description of future sections here, then promote them to full navigation items once they are mature enough to stand on their own.
-
-      The goal is to keep the homepage navigable: primary sections stay visible, while secondary material remains discoverable without crowding the header.
+      [查看网页简历](/cv/)
 ---
 
-This homepage is the first stop for readers who want to understand the person behind the papers, projects, and notes. Use the opening section to explain your current focus, the problems you care about, and the kind of work you want people to associate with your name.
+你好，我是林佳炜，厦门大学计算机技术硕士在读，本科毕业于福州大学软件工程专业。我的目标方向是产品/运营，希望把计算机背景、项目实践和材料整理能力结合起来，做更贴近用户场景和业务目标的产品工作。
 
-The biography does not need to be long, but it should feel specific. Mention your research area, your methods, the communities you work with, and the questions that keep returning across projects. If you build software, teach, write, or maintain datasets, include those activities here so the site feels like a complete professional snapshot rather than only a publication list.
+我有 Web/移动端项目实践经验，做过需求梳理、功能拆解、页面流程、后台模块设计、接口开发与测试，也参与过技术方案对比和项目材料整理。相比只停留在想法层面，我更习惯把问题拆到可交付的流程、功能、指标和文档里。
 
-This area can also orient new visitors. You might point collaborators toward selected publications, students toward teaching materials, and engineers toward repositories or demos. Keep the tone direct and concrete: what you do, what you are exploring now, and how someone can find the right part of the site.
-
-When you are ready to personalize the page, replace this text with your own biography, update the profile image, and adjust the contact details beside the photo. The sections below are already arranged so the navigation can move through the homepage like a guided portfolio.
+这个主页保留了 al-folio 的简洁布局，用来集中展示我的教育背景、项目经历、作品集、学生工作和技术能力。你可以从导航快速跳到对应模块，也可以在底部通过邮箱或 GitHub 联系我。
