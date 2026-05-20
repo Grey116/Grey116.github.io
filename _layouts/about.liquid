@@ -2,46 +2,47 @@
 layout: default
 ---
 <div class="post">
-  {% if page.profile %}
-    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-      {% if page.profile.image %}
-        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-        {% if page.profile.image_circular %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+  <header class="post-header about-hero">
+    <div class="about-heading">
+      <h1 id="about" class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
         {% else %}
-          {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+          {{ site.title }}
         {% endif %}
-        {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-        {%
-          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-          cache_bust=true
-        %}
-      {% endif %}
-      {% if page.profile.more_info %}
-        <div class="more-info">{{ page.profile.more_info }}</div>
-      {% endif %}
-    </div>
-  {% endif %}
-
-  <header class="post-header">
-    <h1 id="about" class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
+      </h1>
       {% if page.subtitle %}
-        <span class="headline-intent">{{ page.subtitle }}</span>
+        <p class="headline-intent">{{ page.subtitle }}</p>
       {% endif %}
-    </h1>
+      <div class="about-intro">{{ content }}</div>
+    </div>
+
+    {% if page.profile %}
+      <div class="profile hero-profile">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 80vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
   </header>
 
   <article>
-    <div class="about-intro">{{ content }}</div>
-
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <section class="home-section">
