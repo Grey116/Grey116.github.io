@@ -41,11 +41,11 @@ body.sticky-bottom-footer {
 }
 
 .home-section {
-  padding: 1.05rem 0;
-  margin-top: 0.85rem;
+  padding: 0.7rem 0;
+  margin-top: 0.45rem;
 
   h2 {
-    margin-bottom: 0.65rem;
+    margin-bottom: 0.45rem;
   }
 
   .home-section-content {
@@ -53,12 +53,28 @@ body.sticky-bottom-footer {
 
     p,
     ul {
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.5rem;
     }
 
     p:last-child {
       margin-bottom: 0;
     }
+
+    .home-project-name {
+      margin-top: 0.75rem;
+      margin-bottom: 0.25rem;
+      font-size: 1.12rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+  }
+}
+
+.about-intro {
+  margin-bottom: 0.25rem;
+
+  p {
+    margin-bottom: 0.65rem;
   }
 }
 
