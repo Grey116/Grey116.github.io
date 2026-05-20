@@ -33,6 +33,22 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
+.post-header {
+  .post-title {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+  }
+
+  .headline-intent {
+    font-size: 1.28rem;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+}
+
 // Profile
 .profile {
   img {

@@ -33,8 +33,10 @@ layout: default
       {% else %}
         {{ site.title }}
       {% endif %}
+      {% if page.subtitle %}
+        <span class="headline-intent">{{ page.subtitle }}</span>
+      {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
   </header>
 
   <article>
