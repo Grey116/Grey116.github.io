@@ -37,11 +37,16 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--global-divider-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: inherit;
     text-decoration: underline;
+    text-decoration-color: var(--global-text-color);
   }
 
   &:hover:after :not(.nav-item.dropdown) {

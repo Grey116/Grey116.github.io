@@ -75,7 +75,7 @@ ul.task-list input[type="checkbox"] {
     i {
       width: 1rem;
       margin-top: 0.18rem;
-      color: var(--global-theme-color);
+      color: var(--global-text-color);
       text-align: center;
       flex: 0 0 1rem;
     }
@@ -228,7 +228,7 @@ ul.task-list input[type="checkbox"] {
         text-decoration: none;
 
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-text-color);
         }
       }
     }
