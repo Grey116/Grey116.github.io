@@ -60,12 +60,28 @@ ul.task-list input[type="checkbox"] {
 
   .more-info {
     margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+    margin-top: 0.75rem;
+    font-family: inherit;
+    font-size: 0.92rem;
+    line-height: 1.45;
 
     p {
-      display: inline-block;
-      margin: 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      margin: 0.35rem 0;
+    }
+
+    i {
+      width: 1rem;
+      margin-top: 0.18rem;
+      color: var(--global-theme-color);
+      text-align: center;
+      flex: 0 0 1rem;
+    }
+
+    a {
+      overflow-wrap: anywhere;
     }
   }
 }
@@ -172,26 +188,32 @@ ul.task-list input[type="checkbox"] {
 // Social (bottom)
 
 .social {
+  margin-top: 1.5rem;
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.4rem;
 
     a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0.45rem;
+
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-bottom: 0.25rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 2.4rem;
+        height: 2.6rem;
+        margin-bottom: 0.25rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.4rem;
+          height: 2.4rem;
         }
       }
 

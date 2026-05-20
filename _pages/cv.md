@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: 简历
-nav: true
+nav: false
 nav_order: 6
 nav_anchor: cv
 cv_pdf: # you can also use external links here

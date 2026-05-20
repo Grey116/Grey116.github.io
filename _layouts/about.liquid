@@ -102,7 +102,10 @@ layout: default
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
+        {% assign contact_note = site.contact_note | strip %}
+        {% if contact_note != '' %}
+          <div class="contact-note">{{ contact_note }}</div>
+        {% endif %}
       </div>
     {% endif %}
 

@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: 林佳炜
 middle_name:
 last_name:
-contact_note: >
-  欢迎通过邮箱或 GitHub 与我联系，公开页面不展示手机号。
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   林佳炜的个人主页，聚焦产品/运营方向、项目经历、作品集与技术背景。
 footer_text: >

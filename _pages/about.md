@@ -9,9 +9,19 @@ profile:
   image: linjiawei_profile.jpg
   image_circular: false
   more_info: >
-    <p>厦门大学计算机技术硕士在读</p>
-    <p>产品 / 运营方向</p>
-    <p>厦门市</p>
+    <p><i class="fa-solid fa-location-dot"></i> 厦门, 福建, 中国</p>
+    <p>
+      <i class="fa-solid fa-location-dot"></i>
+      <a href="https://inst.xmu.edu.cn/xmsznccyjszdsys/zh_CN/index.htm" target="_blank" rel="noopener noreferrer">厦门市智能存储与计算重点实验室</a>
+    </p>
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:linjiawei_mail@163.com">linjiawei_mail@163.com</a>
+    </p>
+    <p>
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/Grey116" target="_blank" rel="noopener noreferrer">Github</a>
+    </p>
 
 selected_papers: false
 social: true
@@ -79,13 +89,6 @@ home_sections:
       **技术理解**：计算机与软件工程背景，熟悉 Web/移动端开发流程和 Spring Boot、Vue、UniApp、UniCloud 等技术栈，会使用 SQL 进行基础数据查询，能够与研发沟通实现边界。
 
       **材料与语言**：参与 10 余项横纵向项目材料撰写，曾协助完成省杰青申报与答辩支持，具备英文文献阅读能力。
-
-  - id: cv
-    title: 简历
-    content: |
-      我把简历内容整理成了网页版本，便于快速浏览教育、项目、作品集、学生工作、荣誉证书与技术能力。
-
-      [查看网页简历](/cv/)
 ---
 
 你好，我是林佳炜，厦门大学计算机技术硕士在读，本科毕业于福州大学软件工程专业。我的目标方向是产品/运营，希望把计算机背景、项目实践和材料整理能力结合起来，做更贴近用户场景和业务目标的产品工作。

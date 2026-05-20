@@ -41,12 +41,20 @@ body.sticky-bottom-footer {
 }
 
 .home-section {
-  min-height: 46vh;
-  padding: 1.75rem 0;
-  margin-top: 1.5rem;
+  padding: 1.05rem 0;
+  margin-top: 0.85rem;
+
+  h2 {
+    margin-bottom: 0.65rem;
+  }
 
   .home-section-content {
     max-width: 48rem;
+
+    p,
+    ul {
+      margin-bottom: 0.65rem;
+    }
 
     p:last-child {
       margin-bottom: 0;
