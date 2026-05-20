@@ -16,6 +16,9 @@ $(document).ready(function () {
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
   });
   $("a").removeClass("waves-effect waves-light");
+  $("#navbarNav .nav-link[href*='#']").on("click", function () {
+    $("#navbarNav").collapse("hide");
+  });
 
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
