@@ -4,7 +4,7 @@ title: 项目经历
 permalink: /projects/
 description: 产品方案设计、选型论证与双端 MVP 交付经历。
 nav: true
-nav_order: 2
+nav_order: 3
 nav_anchor: projects
 display_categories: ["项目经历"]
 horizontal: false

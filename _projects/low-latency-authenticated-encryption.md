@@ -3,7 +3,7 @@ layout: page
 title: 安全通信方案设计与评估
 description: 面向物联网与隐私计算场景的需求拆解、方案设计与选型论证。
 img: assets/img/3.jpg
-importance: 3
+importance: 1
 category: 项目经历
 ---
 

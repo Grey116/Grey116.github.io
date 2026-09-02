@@ -3,8 +3,8 @@ layout: page
 permalink: /leadership/
 title: 组织与沟通
 description: 班级工作、交易与销售实践。
-nav: true
-nav_order: 4
+nav: false
+nav_order: 5
 nav_anchor: leadership
 ---
 

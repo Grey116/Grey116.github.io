@@ -7,6 +7,7 @@ subtitle: 2027 届全日制硕士｜求职方向：产品
 profile:
   align: right
   image: linjiawei_profile.jpg
+  image_alt: 林佳炜个人证件照
   image_circular: false
   more_info: >
     <p><i class="fa-solid fa-location-dot"></i> 厦门, 福建, 中国</p>
@@ -20,7 +21,7 @@ profile:
     </p>
     <p>
       <i class="fa-brands fa-github"></i>
-      <a href="https://github.com/Grey116" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="https://github.com/Grey116" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
 
 selected_papers: false
@@ -31,6 +32,13 @@ latest_posts:
   enabled: false
 
 home_sections:
+  - id: education
+    title: 教育背景
+    content: |
+      **2024.09 - 2027.06** ｜ 厦门大学（985），计算机技术，硕士
+
+      **2020.09 - 2024.06** ｜ 福州大学（211），软件工程，学士
+
   - id: internships
     title: 实习经历
     content: |
@@ -70,16 +78,9 @@ home_sections:
   - id: portfolio
     title: 作品集
     content: |
-      - **[视频会议 AI 助手原型](https://zippy-seahorse-68793e.netlify.app)**：围绕会前准备、纪要生成与待办跟进，设计企业协同效率工具网页原型。
       - **[AI 编程助手竞品分析看板](https://ai-coding-assistant-analysis.netlify.app)**：对比 7 款主流工具的定位、核心能力与适用场景，输出结构化选型建议。
+      - **[视频会议 AI 助手原型](https://zippy-seahorse-68793e.netlify.app)**：围绕会前准备、纪要生成与待办跟进，设计企业协同效率工具网页原型。
       - **[原型工具竞品分析看板](https://prototyping-tools-analysis.netlify.app)**：横评 9 款主流工具的学习成本、协作方式与交付能力，形成选型决策指南。
-
-  - id: education
-    title: 教育背景
-    content: |
-      **2024.09 - 2027.06** ｜ 厦门大学（985），计算机技术，硕士
-
-      **2020.09 - 2024.06** ｜ 福州大学（211），软件工程，学士
 
   - id: skills
     title: 综合能力

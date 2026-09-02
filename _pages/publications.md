@@ -4,7 +4,7 @@ permalink: /portfolio/
 title: 作品集
 description: 产品原型与竞品分析作品。
 nav: true
-nav_order: 3
+nav_order: 4
 nav_anchor: portfolio
 display_categories: ["作品集"]
 horizontal: false

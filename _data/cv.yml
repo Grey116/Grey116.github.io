@@ -34,7 +34,7 @@ cv:
         start_date: "2020.09"
         end_date: "2024.06"
 
-    Experience:
+    实习经历:
       - company: 小米科技有限责任公司
         position: 产品经理实习生
         start_date: "2026.06"
@@ -71,19 +71,19 @@ cv:
           - 规划内容浏览、社区互动、个性推荐与后台运营 4 类场景，设计基于内容特征与用户行为反馈的推荐逻辑，建立“曝光-点击-收藏/评论-推荐反馈”效果评估链路。
 
     作品集:
-      - name: 视频会议 AI 助手原型
-        url: https://zippy-seahorse-68793e.netlify.app
-        summary: 围绕会前准备、纪要生成与待办跟进，设计企业协同效率工具网页原型。
-
       - name: AI 编程助手竞品分析看板
         url: https://ai-coding-assistant-analysis.netlify.app
         summary: 对比 7 款主流工具的定位、核心能力与适用场景，输出结构化选型建议。
+
+      - name: 视频会议 AI 助手原型
+        url: https://zippy-seahorse-68793e.netlify.app
+        summary: 围绕会前准备、纪要生成与待办跟进，设计企业协同效率工具网页原型。
 
       - name: 原型工具竞品分析看板
         url: https://prototyping-tools-analysis.netlify.app
         summary: 横评 9 款主流工具的学习成本、协作方式与交付能力，形成选型决策指南。
 
-    技术能力:
+    综合能力:
       - name: 产品与项目
         keywords:
           - MRD/PRD

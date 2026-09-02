@@ -3,7 +3,7 @@ layout: page
 title: 数码社区内容与推荐平台
 description: 从竞品分析到双端 MVP 交付，建立内容与推荐效果评估链路。
 img: assets/img/1.jpg
-importance: 1
+importance: 2
 category: 项目经历
 ---
 
