@@ -8,12 +8,12 @@ middle_name:
 last_name:
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  林佳炜的个人主页，聚焦产品/运营方向、项目经历、作品集与技术背景。
+  林佳炜的个人主页，展示产品实习、项目经历、作品集与计算机技术背景。
 footer_text: >
   基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 与
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> 构建，托管于
   <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>。
-keywords: 林佳炜, 产品经理, 运营, 个人主页, 作品集, 计算机技术 # add your own keywords or leave empty
+keywords: 林佳炜, 产品经理, 产品实习, 个人主页, 作品集, 计算机技术 # add your own keywords or leave empty
 lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 💼 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

@@ -2,7 +2,7 @@
 layout: page
 title: 项目经历
 permalink: /projects/
-description: 围绕产品方案、需求拆解、技术理解和交付文档的项目经历。
+description: 产品方案设计、选型论证与双端 MVP 交付经历。
 nav: true
 nav_order: 2
 nav_anchor: projects

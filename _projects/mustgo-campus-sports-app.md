@@ -4,7 +4,7 @@ title: MustGo 校园运动社交 App
 description: 面向校园运动组队场景的 App 方案设计、后端开发与测试。
 img: assets/img/2.jpg
 importance: 2
-category: 项目经历
+category: 历史项目
 ---
 
 ## 背景与目标

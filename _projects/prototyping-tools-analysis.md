@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 原型图工具竞品分析看板
-description: 九款主流原型工具深度横评与选型决策指南。
+title: 原型工具竞品分析看板
+description: 横评 9 款主流工具的学习成本、协作方式与交付能力，形成选型决策指南。
 img: assets/img/6.jpg
 importance: 3
 category: 作品集

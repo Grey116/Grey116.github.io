@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI 编程助手竞品分析看板
-description: 七大主流 AI 编程工具横向对比与选型推荐。
+description: 对比 7 款主流工具的定位、核心能力与适用场景，输出结构化选型建议。
 img: assets/img/5.jpg
 importance: 2
 category: 作品集
