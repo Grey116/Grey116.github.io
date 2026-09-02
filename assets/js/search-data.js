@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-项目经历",
           title: "项目经历",
-          description: "围绕产品方案、需求拆解、技术理解和交付文档的项目经历。",
+          description: "产品方案设计、选型论证与双端 MVP 交付经历。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -30,38 +30,38 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/portfolio/";
           },
-        },{id: "nav-学生工作",
-          title: "学生工作",
-          description: "班级服务与组织协作经历。",
+        },{id: "nav-组织与沟通",
+          title: "组织与沟通",
+          description: "班级工作、交易与销售实践。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/leadership/";
           },
-        },{id: "nav-技术能力",
-          title: "技术能力",
-          description: "产品工具、研发理解、材料写作与语言能力。",
+        },{id: "nav-综合能力",
+          title: "综合能力",
+          description: "产品、数据、技术、AI 工具与组织沟通能力。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/skills/";
           },
         },{id: "projects-ai-编程助手竞品分析看板",
           title: 'AI 编程助手竞品分析看板',
-          description: "七大主流 AI 编程工具横向对比与选型推荐。",
+          description: "对比 7 款主流工具的定位、核心能力与适用场景，输出结构化选型建议。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ai-coding-assistant-analysis/";
-            },},{id: "projects-视频会议-ai-助手-网页应用原型",
-          title: '视频会议 AI 助手-网页应用原型',
-          description: "模拟 AI 驱动的会前准备、纪要生成与待办跟进全链路效率工具原型。",
+            },},{id: "projects-视频会议-ai-助手原型",
+          title: '视频会议 AI 助手原型',
+          description: "围绕会前准备、纪要生成与待办跟进，设计企业协同效率工具网页原型。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ai-meeting-assistant-prototype/";
-            },},{id: "projects-基于混合推荐算法的数码社区平台",
-          title: '基于混合推荐算法的数码社区平台',
-          description: "面向数码产品爱好者的移动端 App 与 Web 后台产品规划、设计与实现。",
+            },},{id: "projects-数码社区内容与推荐平台",
+          title: '数码社区内容与推荐平台',
+          description: "从竞品分析到双端 MVP 交付，建立内容与推荐效果评估链路。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/digital-community-platform/";
-            },},{id: "projects-低延迟认证加密算法的设计与分析",
-          title: '低延迟认证加密算法的设计与分析',
-          description: "面向高性能安全通信场景的技术需求拆解、方案对比与材料整理。",
+            },},{id: "projects-安全通信方案设计与评估",
+          title: '安全通信方案设计与评估',
+          description: "面向物联网与隐私计算场景的需求拆解、方案设计与选型论证。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/low-latency-authenticated-encryption/";
             },},{id: "projects-mustgo-校园运动社交-app",
@@ -69,9 +69,9 @@ ninja.data = [{
           description: "面向校园运动组队场景的 App 方案设计、后端开发与测试。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mustgo-campus-sports-app/";
-            },},{id: "projects-原型图工具竞品分析看板",
-          title: '原型图工具竞品分析看板',
-          description: "九款主流原型工具深度横评与选型决策指南。",
+            },},{id: "projects-原型工具竞品分析看板",
+          title: '原型工具竞品分析看板',
+          description: "横评 9 款主流工具的学习成本、协作方式与交付能力，形成选型决策指南。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/prototyping-tools-analysis/";
             },},{
