@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/education/";
           },
+        },{id: "nav-实习经历",
+          title: "实习经历",
+          description: "产品经理与后端开发实习经历。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/internships/";
+          },
         },{id: "nav-项目经历",
           title: "项目经历",
           description: "产品方案设计、选型论证与双端 MVP 交付经历。",
@@ -29,13 +36,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/portfolio/";
-          },
-        },{id: "nav-组织与沟通",
-          title: "组织与沟通",
-          description: "班级工作、交易与销售实践。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/leadership/";
           },
         },{id: "nav-综合能力",
           title: "综合能力",
